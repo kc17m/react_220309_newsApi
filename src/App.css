@@ -1,38 +1,102 @@
-.App {
+
+.App-header, main, .change, body {
+  background-color: #666970;
+  display: flex;
+  width: 100%;   
+  flex-wrap: wrap;  
+}
+
+.change {
+  background-color: #666970; 
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, .Collapsible__trigger {
+  margin: 5%;
+  color: rgb(43, 77, 43)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+figure {
+  width: 23%;
+  font-size: 1.2rem;
+  color: #000;
+  background: lightgray;
+  padding: 2%;
+}
+.photo {
+  height: 30%;
 }
 
-.App-link {
-  color: #61dafb;
+.body {
+  height: 28%;
+  margin: 10% 0;
+}
+.title {
+  height: 16%;
+  margin: 0 0 3% 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3, p {
+  text-align: start;
+  
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  width: 40%;
+  padding: 2%;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  
+}
+
+button, .date {
+  text-align: center;
+  margin: 5% 20%;
+}
+
+.changeButton {
+  width: 15%;
+  margin: 0 2%;
+  padding: 2%;
+  cursor: pointer;
+  
+}
+
+.Collapsible__trigger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all .5s linear;
+
+}
+
+.Collapsible__trigger:hover {
+  font-size: 2rem;
+  color: rgb(168, 130, 104);
+  transition: all .5s linear;
+
+}
+
+.Collapsible__contentOuter{ 
+  margin: 2%;
+   
+}
+
+.changeButton:hover {
+  background: rgb(112, 60, 60);
+  color: rgb(127, 121, 158)
+  
+}
+
+
+
